@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Comic';
+    src: url('fonte/ComicNeueSansID.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --cor: #f8afb6;
+
+    --fonte-padrão: 'Comic' , sans-serif;
+    --font-titulo: "Passion One", sans-serif;
+    --font-secundaria: "Asap", sans-serif;
+}
+
+body{
+    font-family: 'Comic';
+    text-align: left;
+    min-height: 100vh;
+}
+
+:root{
+    --cor: #f8afb6;
+
+    --fonte-padrão: Comic;
+}
+
+header {
+    background-color: #f8afb6;
+}
+
+header h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 10vw;
+    font-family: var(--font-titulo);
+    font-weight: 900;
+    font-variant: small-caps;
+}
+
+header p{
+    font-family: var(--font-secundaria);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+}
+header p > a{
+    text-decoration: none;
+    color: rgb(3, 51, 72);
+}
+
+header p > a:hover{
+    text-decoration: underline;
+    color: rgb(209, 216, 222);
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 4vw;
+}
+
+section.normal{
+    background-color: white;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.444);
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 2px 0px 5px black;
+}
+
+section.imagem#img01{
+    background-image: url('imagens/background001.jpg');
+}
+
+section.imagem#img02{
+    background-image: url('imagens/background002.jpg');
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.386);
+    padding-left: 5px;
+    color: white;
+}
+footer{
+    padding: 5px;
+    text-align: center;
+    background-color: var(--cor);
+    font-family: var(--font-secundaria);
+}
+
+footer p > a{
+    text-decoration: none;
+    color: rgb(3, 51, 72);
+    font-weight: bold;
+}
+
+footer p > a:hover{
+    text-decoration: underline;
+    color: rgb(209, 216, 222);
+}
